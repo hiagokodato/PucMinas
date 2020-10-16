@@ -1,0 +1,86 @@
+#include <stdio.h>
+    #include <stdlib.h>
+    int Preencher(int (*)[10]);
+    int Imprimir(int(*)[10]);
+    int Media(int(*)[10]);
+    int Localizar(int(*)[10],int);
+    int main()
+    {
+        int x[10][10],y,op;
+        srand(time(NULL));
+        do
+        {
+            printf("Insira:\n1 - preencha uma matriz com valor entre 40 e 50\n2 - Imprimir as matrizes\n3 - Media dos elementos coluna 2\n4 - Localizar valor na matriz\nDigite 0 para sair");
+            scanf("%op",&op);
+            switch(op)
+            {
+            case 1:
+                Preencher(x);
+                break;
+            case 2:
+                Imprimir(x);
+                break;
+            case 3:
+                Media(x);
+                break;
+            case 4:
+                printf("\nInsira o valor para localizar seus multiplos: ");
+                scanf("%i",&y);
+                Localizar(x,y);
+                break;
+            }
+        }
+        while(op!=0);
+        return 0;
+    }
+    int Preencher(int x[10][10])
+    {
+        for(int i=0; i<10; i++)
+        {
+            for(int h=0; h<10; h++)
+            {
+                x[i][h]=rand()%(50+1-40)+40;
+            }
+        }
+        return x[10][10];
+    }
+    int Imprimir(int x[10][10])
+    {
+        for(int i=0; i<10; i++)
+        {
+            for(int h=0; h<10; h++)
+            {
+                printf("x[%i][%i]=%i\n",i,h,x[i][h]);
+            }
+        }
+    }
+    int Media(int x[10][10])
+    {
+        int a=0;
+        float b;
+        for(int i=0; i<10; i++)
+        {
+            for(int h=0; h<10; h++)
+            {
+                if(i==2)
+                {
+                    a=a+x[i][h];
+                }
+            }
+        }
+        b=a/10;
+        printf("\nA media é: %f",b);
+    }
+    int Localizar(int x[10][10],int y)
+    {
+        for(int i=0; i<10; i++)
+        {
+            for(int h=0; h<10; h++)
+            {
+                if(x[i][h]%y==0)
+                {
+                    printf("x[%i][%i]=%i\n",i,h,x[i][h]);
+                }
+            }
+        }
+    }

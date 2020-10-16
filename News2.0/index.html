@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>News</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+
+<header>
+    <div>
+        <img alt="logo image" src="img/logo.png"/>
+        <div class="header__page-name">
+            <span class="letter">N</span>
+            <span>ews</span>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#headlines">Headlines</a>
+        <a href="#music">Musicas</a>
+        <a href="#opinion">Opiniões</a>
+        <a href="#brazil">Brasil</a>
+        <a href="#food">Comida</a>
+    </nav>
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menu
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <a href="#headlines">Headlines</a>
+            <a href="#music">Musicas</a>
+            <a href="#opinion">Opiniões</a>
+            <a href="#brazil">Brasil</a>
+            <a href="#food">Comida</a>
+        </div>
+    </div>
+
+</header>
+
+<main>
+    <div id="content">
+
+        <div id="search">
+            <label for="pesquisa">Mais Noticias:</label>
+            <input type="text" id="pesquisa">
+            <br>
+            <button id="search-btn" onclick="onSearchClick()">Pesquisar</button>
+            <nav id="storage-nav"></nav>
+        </div>
+
+        <div id="news">
+            <h3>Headlines</h3>
+            <section id="headlines"></section>
+
+            <br/>
+
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Salvar pesquisa</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <label for="search__title">Pesquisa:</label>
+                    <input type="text" id="search__title">
+                    <p/>
+                    <label for="search__title">Valor:</label>
+                    <input type="text" id="search__value" disabled="true">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" onclick="setValueOnStorage()" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" language="javascript" src="js/script.js"></script>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    <button type="button" onclick="setValueOnStorage()" class="btn btn-primary">Salvar</button> <script src=" "></script>
+
+</body>
+</body>
+</html>

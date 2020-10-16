@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Diminua seu consumo Co2">
+  <meta name="author" content="Consumo Consciente">
+
+  <title>Consumo Consciente</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top nav-options">
+    <div class="container">
+      <a class="navbar-brand logo" href="#">Consumo Consciênte </br>
+        Aprenda como reduzir o seu uso.
+
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Calculadora de Co2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Espaço Você</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ajuda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+              <legend></legend>
+              <legend>Login:</legend>
+              <label for ="id_nome=">Nome:</label>
+              <input type="text" name="nome" id="id_nome=" required autofocus
+              placeholder="Nome"/><br />
+              <label for="id_senha=">Senha:</label>
+              <input type="password" name="senha" id="id_senha=" required autofocus 
+              placeholder="Senha"/><br />
+              <label for ="id_email=">E-mail:</label>
+              <input type="email" name="emailc" id="id_email="required autofocus 
+              placeholder="E-mail"/><br />
+        
+              <input type="submit" name ="bt_cadastrar" id="id_bt_cadastrar"
+              value="Login" />
+        
+        
+              <input type="submit" name ="bt_cadastrar" id="id_bt_cadastrar"
+              value="Criar Conta" />
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" style="background-image: url('https://s2.glbimg.com/MicIqv6jDnkRlClRmh7UvbzYwmE=/0x0:1920x1243/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2018/j/Q/mxP0QoRqeHLYqRGCRnAg/smoke-258786-1920.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Consciência</h3>
+            <p>Nosso site é especializado na redução do consumo de Co2, o processo funciona assim: Preencha o primeiro formulário e preencha novamente para criarmos sua rotina e após isso enviaremos mais formúlarios para a otimização do seu uso. Veja o primeiro formulário abaixo: </p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('https://g1.globo.com/Amazonia/foto/0,,21907492-FMM,00.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+
+            <h3>Impacto das queimadas</h3>
+            <p>Veja como as queimadas interferem no no Co2 geral emitido</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url(https://abrilexame.files.wordpress.com/2016/09/size_960_16_9_20151020-25144-1oor4i6.jpg?quality=70&strip=info&w=920)">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Cidade Limpa é cidade consciente</h3>
+            <p>Veja todos os impactos causados por poluição em massa</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 60px;">
+    <form method="post" action="cadastro.php">
+      
+  <fieldset>
+    <legend></legend>
+  
+
+      
+  </a>
+</br>
+      <h4>Primeiro Formulário:</h4>
+    <fieldset>
+        <h4>Tenho em casa:</h4>
+        <input type="checkbox" name="posse" id="fogao" />Fogão a gás <br />
+        <input type="checkbox" name="posse" id="id_religião" />Churrasqueira<br /> 
+        <input type="checkbox" name="posse" id="id_fornoE" />Forno Elétrico<br /> 
+        <input type="checkbox" name="posse" id="id_fornoL" />Forno a Lenha<br /> 
+        <input type="checkbox" name="posse" id="id_moto" />Moto<br /> 
+        <input type="checkbox" name="posse" id="id_carro" />Carro<br /> 
+        <input type="checkbox" name="posse" id="id_grama" />Cortador de Grama<br />
+
+    </fieldset>
+
+
+  </br>
+
+
+
+<h4>Dados Pessoais:</h4>
+
+<fieldset>
+  <label for ="id_Genero=">Gênero:</label>
+  <input type="radio" name="sexo" id="id_masculino" />    Masculino
+  <input type="radio" name="sexo" id="id_feminino" /> Feminino <br /> 
+</fieldset>
+
+      <label for ="id_peso=">Peso:</label> 
+      <input type="peso" name="peso" id="id_peso="required autofocus 
+      placeholder="Peso em KG"/><br />
+      <label for ="id_idade=">Idade:</label>
+      <input type="idade" name="idade" id="id_idade"required autofocus 
+      placeholder="Idade"/><br />
+      <label for ="id_profissao=">Profissão:</label>
+      <input type="profissao" name="profissao" id="id_profissao"required autofocus 
+      placeholder="Profissão"/><br />
+      <label for ="consumo">Consumo de energia elétrica mensal:</label>
+      <input type="consumo" name="consumo" id="id_consumo" required autofocus 
+      placeholder=" Consumo em kwh"/><br />
+      <label for ="gas">Consumo mensal de botijões de gás de cozinha:</label>
+      <input type="gas" name="gas" id="id_gas"required autofocus 
+      placeholder="Butijões mensais"/><br />
+      <label for ="pessoas">Número de pessoas que moram em sua casa:</label>
+      <input type="pessoas" name="pessoas" id="id_pessoas"required autofocus 
+      placeholder="Pessoas residentes"/><br />
+      <label for ="carrogas"> Uso do carro movido a gasolina mensal(km rodado):</label>
+      <input type="carrogas" name="carrogas" id="id_carrogas"required autofocus 
+      placeholder="Carros a Gasolina"/><br />
+      <label for ="carrobio"> Uso do carro movido a biocombustiveis mensal(km rodado):</label>
+      <input type="carrobio" name="lixo" id="id_carrobio"required autofocus 
+      placeholder="Carros a Biocobustivel"/><br />
+      <label for ="lixo"> Quantidade de lixo sólido gerada por dia:</label>
+      <input type="lixo" name="lixo" id="id_lixo"required autofocus 
+      placeholder="Lixo em KG produzido"/><br />
+
+      
+
+    </fieldset>
+     
+
+      
+
+
+
+      <fieldset>
+        <label for ="id_atividades=">Descreva brevemente suas atividades diarias:</label>
+        <input type="atividades" name="atividades" id="id_atividades" /> <br />
+      </fieldset>
+      <form action='index2.html' method="get">
+        <input type="submit" value="Ir para a página" 
+             name="Submit" id="frm1_submit" />
+    </form>
+
+  </fieldset>
+  </form>
+</p>  
+<br>
+<br\>
+
+  <h1>Noticias sobre o Co2</h1>
+
+    <div class="row">
+    <div class="col-lg-4 col-md-12 col-sm-12 portfolio-item">
+      <div class="card h-100">
+        <img class="card-img-top" src="https://cio.com.br/wp-content/uploads/2020/05/dark-data-poluicao.jpg" alt="">
+        <div class="card-body">
+          <h4 class="card-title">
+            <span>Dark Data</span>
+          </h4>
+          <p class="card-text">Dark data será responsável pela emissão de cerca de 6,4 milhões de toneladas de CO2 em 2020</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <img class="card-img-top" src="https://nacoesunidas.org/wp-content/uploads/2020/02/forum-e1581355139798.jpeg" alt="">
+        <div class="card-body">
+          <h4 class="card-title">
+            <span>Covid-19</span>
+          </h4>
+          <p class="card-text">Concentração global de CO2 bate recorde mesmo durante crise da COVID-19.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://cdn.domtotal.com/img/noticias/2020-01/1444082_446358.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">
+              <span>Vale</span>
+            </h4>
+            <p class="card-text">Vale pretende investir R$ 11,6 para diminuir em 33% as emissões de CO2 até 2030</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-12 col-sm-12 portfolio-item">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://conteudo.imguol.com.br/c/entretenimento/7a/2019/05/03/poluicao-veiculos-a-diesel-fumaca-caminhao-1556903236229_v2_900x506.jpg alt="">
+          <div class="card-body">
+            <h4 class="card-title">
+              <span>Como a ciência do clima tem contribuído para salvar vidas?</span>
+            </h4>
+            <p class="card-text">Dados apontam para queda de 5,5% nas emissões globais de CO2 durante a pandemia</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://cdn-motorshow-ssl.akamaized.net/wp-content/uploads/sites/2/2016/02/gol-g3-flex-696x522.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title" >
+              <span>Campanha propõe obrigar o uso de etanol em carros flex</span>
+            </h4>
+            <p class="card-text">Uma campanha da Federação da Agricultura e Pecuária do Estado de São Paulo sugere obrigar o abastecimento com etanol dos carros com motor flex.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://cdn4.ecycle.com.br/cache/images/2018-04/50-650-energia-solar.jpg">
+          <div class="card-body">
+            <h4 class="card-title">
+              <span>Usina solar no parque do peão, em Barretos, vai entrar em operação</span>
+            </h4>
+            <p class="card-text">Após quatro meses de obra, o Parque do Peão, em Barretos (SP), acaba de implementar uma usina de energia solar e os testes devem se iniciar ainda este mês. </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+
+  <hr>
+
+  </main>
+
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright Kodato &copy; 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

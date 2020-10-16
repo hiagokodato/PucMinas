@@ -1,0 +1,126 @@
+/*header style*/
+header {
+    background: #1E1E1E;
+    display: grid !important;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+}
+header > div {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+header > div > img {
+    width: 80px;
+}
+.letter{
+    color: #19ad52;
+    font-weight: 500;
+}
+.header__page-name {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 100;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2px;
+}
+nav {
+    color: #74E0EF;
+    cursor: pointer;
+    display: grid !important;
+    grid-auto-flow: column;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.dropdown {
+    display: none;
+}
+
+/*main style*/
+main {
+    width: 100vw;
+    padding: 20px;
+    background: rgb(237, 237, 237);
+}
+section {
+    padding: 14px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background: rgb(219, 219, 219);
+}
+#content{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#search {
+    padding: 40px 8px;
+}
+#search-btn{
+    margin-top: 8px;
+}
+#storage-nav{
+    grid-auto-flow: column;
+    justify-content: start;
+    color: blue;
+    display: grid !important;
+}
+
+/*news style*/
+article{
+    display: grid !important;
+    grid-auto-flow: column;
+    gap: 12px;
+}
+.img-thumbnail{
+    width: 100% !important;
+}
+.content__info{
+    font-size: 12px;
+    color: grey;
+    font-size: 12px;
+}
+.content__title {
+    font-size: 20px;
+    color: black;
+}
+.img-container{
+    width: 400px !important;
+}
+.show {
+    display: grid !important;
+}
+.search-title {
+    display: grid;
+    grid-template-columns: auto 200px;
+    padding: 8px 0px;
+}
+
+/*media 800px style*/
+@media (max-width: 950px){
+    nav{
+        display: none !important;
+    }
+    article{
+        grid-auto-flow: row;
+    }
+    .img-container{
+        margin: 0 auto;
+        width: 50%;
+    }
+    .dropdown {
+        display: block;
+    }
+    #content {
+        flex-direction: column;
+    }
+    #search{
+        padding: 10px 0px;
+    }
+}
